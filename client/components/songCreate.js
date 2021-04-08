@@ -14,7 +14,7 @@ function SongCreate() {
         variables: {
           title: song,
         },
-        refetchQueries: [{ query: fetchSongs }],
+        refetchQueries: [{ query: fetchSongs }], //Use this when there is no accociation(like songlist has no idea about song create but we wannna fetch new songlist)
       })
       .then(() => hashHistory.push('/'))
       .catch((err) => console.log(err));

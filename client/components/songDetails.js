@@ -18,6 +18,7 @@ function SongDetails(props) {
 }
 
 const query = fetchSong;
+//since In initail query we wanna pass some variable so we use this syntax
 export default graphql(
   query,
   {
